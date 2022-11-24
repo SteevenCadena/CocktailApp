@@ -1,0 +1,42 @@
+
+
+h2{
+    text-align: left;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    font-size: 2.7rem;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffffff;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+
+
+button{
+    cursor: pointer;
+    background-color: rgba(11, 88, 113 , .3);
+    border-radius: .3rem ;
+    border: 1px solid rgba(11, 88, 113 , .3) ; 
+    color: #ffffff;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    backdrop-filter: blur(.2rem);
+    margin-right: 1rem;
+
+}
+button:hover{
+    background-color: rgba(11, 88, 113 , .7);
+
+}
+.active-button{
+    background-color: rgba(11, 88, 113 , .7);
+}
+

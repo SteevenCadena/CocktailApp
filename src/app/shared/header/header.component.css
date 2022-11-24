@@ -1,0 +1,47 @@
+
+header{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #212121;
+    background-color: aliceblue;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media( min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .contenedor-img{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        column-gap: 3rem;
+    }
+  
+}
+
+
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+}
+
+
+img{
+    width: 10rem;
+}
+

@@ -1,0 +1,16 @@
+input{
+    padding: 1rem;
+    width: 30rem;
+    outline: none;
+    border: 2px solid #660000;
+    border-radius: .9rem;
+    font-size: 1.7rem;
+}
+input:focus{
+    border: 2px solid #000033;
+}
+@media ( min-width: 768px ) {
+    input{
+        width: 50rem;
+    }
+}

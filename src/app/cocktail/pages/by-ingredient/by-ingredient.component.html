@@ -1,0 +1,37 @@
+<div>
+
+    <app-input (onNewtermino)="buscar($event)" 
+                (onDebounce)="sugerir($event)"
+                [placeholder]="placeholder"
+    ></app-input>
+    <ul *ngIf="mostrarSugerencias" class="ul">
+
+        <li *ngFor="let s of cocktailsSugeridos;"
+            class="li-sugerencia"
+            [routerLink]="[ '/information', s.idDrink]"
+        >
+            <img class="img-sugerir" [src]="s.strDrinkThumb" [alt]="s.strDrink">
+            <span>{{ s.strDrink }}</span>
+        </li>
+
+        <li class="list-group-item list-group-item-action"
+            class="li-sugerencia"
+            (click)="buscarSugerencias( termino )"
+        >
+        Buscar: {{ termino }}
+        </li>
+
+    </ul>
+    
+    <div class="bg">
+            <app-card class="card-container" 
+                [cocktails]="cocktails"
+
+            ></app-card>
+    </div>
+
+    <div *ngIf="hayError" class="error">
+        No coctail found with: <span>{{ termino }}</span>
+    </div>
+</div>
+

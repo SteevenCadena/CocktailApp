@@ -1,0 +1,114 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+   
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    
+    background-image: url("./assets/bg-cocktail-drinks-3.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow-y: scroll;
+}
+
+.container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.bg{
+    margin-bottom: 5rem;
+}
+
+
+.card-container{
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+@media ( min-width: 900px ) {
+    .card-container{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media ( min-width: 1278px ) {
+    .card-container{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*sugerencias*/
+.ul{
+    padding: 0;
+    margin: 0;
+    
+}
+.li-sugerencia{
+    cursor: pointer;
+    background-color: #ffffff25   ;
+    width: 30rem;
+    list-style: none;
+    max-height: 5rem;
+    padding: 1rem;
+    width: 30rem;
+    outline: none;
+    border: 1px solid #000033;
+    border-radius: .9rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media ( min-width: 768px ) {
+    .li-sugerencia{
+        width: 50rem;
+    }
+}
+
+.error{
+    color: #ffffff;
+}
+.error span{
+    font-weight: bold;
+}
+
+.img-sugerir{
+    width: 4rem;
+}

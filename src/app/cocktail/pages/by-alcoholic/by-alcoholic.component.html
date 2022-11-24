@@ -1,0 +1,11 @@
+
+<div class="categorias">
+    <h2>Categories</h2>
+    <div class="c">
+        <button *ngFor="let category of categorias" 
+                (click)="buscar( category )"
+        >{{ category }}</button>
+    </div>
+</div>
+
+<app-card [cocktails]="cocktails" class="card-container" ></app-card>
